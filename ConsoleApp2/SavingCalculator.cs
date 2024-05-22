@@ -19,12 +19,13 @@ namespace ConsoleApp2
             foreach (Person person in _context.Person)
             {
                 Console.WriteLine(person.Name);
-            }
+           
 
                 foreach (SavingAccount savingAccount in _context.SavingAccount) {
                 
                 
-                Console.WriteLine("Depot: "+ savingAccount.Amount + " Euros   ,Rapport: " + savingAccount.Percentage + " %   Soit: "+ savingAccount.Amount * (savingAccount.Percentage / 100) +" Euros");
+                Console.WriteLine("Depot: "+ savingAccount.Amount + " Euros   , Rapport: " + savingAccount.Percentage + " %   Soit: "+ savingAccount.Amount * (savingAccount.Percentage / 100) +" Euros");
+                }
             }
         }
     }
